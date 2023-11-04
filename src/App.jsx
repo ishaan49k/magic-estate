@@ -5,7 +5,7 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp'; 
 import About from './pages/About';
 import Profile from './pages/Profile';
-// import Header from './components/Header'; 
+import Header from './components/Header';
 // import PrivateRoute from './components/PrivateRoute'; 
 // import CreateListing from './pages/CreateListing'; 
 // import UpdateListing from './pages/UpdateListing'; 
@@ -20,6 +20,7 @@ import Profile from './pages/Profile';
 const App = () => {
   return (
 <BrowserRouter>
+  <Header/>
   <Routes>
     {/* Cover everything with BrowserRouter and Routes and then include all the routes */}
     <Route path='/' element={<Home />} /> 
